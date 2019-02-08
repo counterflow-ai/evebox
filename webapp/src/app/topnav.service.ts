@@ -33,7 +33,7 @@ declare var localStorage: any;
 @Injectable()
 export class TopNavService {
 
-    timeRange = "24h";
+    timeRange = "1h";
 
     constructor(private config: ConfigService) {
         let forceDefaultTimeRange = config.getDefault("force_time_range");
