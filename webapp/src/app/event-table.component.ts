@@ -49,14 +49,8 @@ import {ActivatedRoute} from "@angular/router";
             <th>Type</th>
             <!-- Source/Dest. -->
             <th>Source/Dest</th>
-            <!-- Analytics -->
-            <th *ngIf="eventType == 'dns'">
-                <a (click)="sortBy('analytics.dga.score')" style="display: block; width: 120px;">
-                    DGA Score
-                    <i *ngIf="this.sortByField == 'analytics.dga.score' && this.order == 'asc'" class="fa fa-chevron-up"></i><i *ngIf="this.sortByField == 'analytics.dga.score' && this.order == 'desc'" class="fa fa-chevron-down"></i>
-                </a>
-            </th>
-            <th *ngIf="eventType != 'dns'">
+            <!-- Analytics -->            
+            <th>
                 <a (click)="sortBy('priority.priority')" style="display: block; width: 80px;">
                     Priority
                     <i *ngIf="this.sortByField == 'priority.priority' && this.order == 'asc'" class="fa fa-chevron-up"></i><i *ngIf="this.sortByField == 'priority.priority' && this.order == 'desc'" class="fa fa-chevron-down"></i>
@@ -88,15 +82,12 @@ import {ActivatedRoute} from "@angular/router";
               {{row._source.dest_ip | eveboxFormatIpAddress}}
             </td>
             <td class="text-nowrap">
-                <div *ngIf="!row._source.analytics">
+                <div *ngIf="!row._source.priority">
                   &nbsp;
                 </div>
-                <div *ngIf="eventType != 'dns' && row._source.analytics && row._source.analytics.triage">
+                <div *ngIf="row._source.priority && row._source.priority.priority">
                     {{row._source.priority.priority.toFixed(3)}}
-                </div>
-                <div *ngIf="eventType == 'dns' && row._source.analytics && row._source.analytics.dga">
-                    {{row._source.analytics.dga.score.toFixed(3)}}
-                </div>
+                </div>                
             </td>
             <td style="word-break: break-all;">{{row |
             eveboxEventDescriptionPrinter}}

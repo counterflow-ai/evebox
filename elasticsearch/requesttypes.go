@@ -254,6 +254,8 @@ func Sort(field string, order string) map[string]interface{} {
 	return map[string]interface{}{
 		field: map[string]interface{}{
 			"order": order,
+			// Add this for MLE priority field that may not be present in older indices
+			"unmapped_type": "float",
 		},
 	}
 }
