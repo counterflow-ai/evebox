@@ -153,7 +153,11 @@ export class EventComponent implements OnInit, OnDestroy {
             this.features["comments"] = true;
         }
 
-        if (this.configService.getConfig().threateye && this.configService.getConfig().threateye.url) {
+        if (this.configService.getConfig().threateye 
+            && this.configService.getConfig().threateye.url
+            && this.configService.getConfig().threateye.url != ''
+            && this.configService.getConfig().threateye.uuid
+            && this.configService.getConfig().threateye.uuid != '') {
             this.threateye = this.configService.getConfig().threateye;
         }
 

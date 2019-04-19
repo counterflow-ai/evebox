@@ -9,3 +9,5 @@ Server
    server-oneshot
    authentication
    tls
+   opnids
+   tef
