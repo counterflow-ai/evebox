@@ -62,8 +62,8 @@ hosted on Docker hub.
 Example:
 
 ```
-docker pull jasonish/evebox
-docker run -it -p 5636:5636 jasonish/evebox -e http://elasticsearch:9200
+docker pull counterflow/evebox
+docker run -it -p 5636:5636 counterflow/evebox -e http://elasticsearch:9200
 ```
 
 replacing your __http://elasticsearch:9200__ with that of your Elastic
@@ -107,7 +107,7 @@ support reporting.
 evebox server --datastore sqlite --input /var/log/suricata/eve.json
 ```
 
-More documentation can be found at http://evebox.readthedocs.io/en/latest/.
+More documentation can be found at https://counterflow-ai-evebox.readthedocs.io/en/latest.
 
 ## Building EveBox
 
@@ -124,7 +124,7 @@ out into your GOPATH.
 For example:
 
 ```
-git clone https://github.com/jasonish/evebox.git ~/project/evebox
+git clone https://github.com/counterflow-ai/evebox.git ~/project/evebox
 ```
 
 If this is the first build the npm and Go dependencies must be
