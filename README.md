@@ -1,4 +1,4 @@
-# EveBox [![Documentation Status](https://readthedocs.org/projects/counterflow-ai-evebox/badge/?version=latest)](https://counterflow-ai-evebox.readthedocs.io/en/latest/?badge=latest) [![Build Status](https://travis-ci.org/counterflow-ai/evebox.svg?branch=master)](https://travis-ci.org/counterflow-ai/evebox)
+# EveBox [![Documentation Status](https://readthedocs.org/projects/counterflow-ai-evebox/badge/?version=latest)](https://counterflow-ai-evebox.readthedocs.io/en/latest/?badge=latest) [![Build Status](https://travis-ci.org/counterflow-ai/evebox.svg?branch=master)](https://travis-ci.org/counterflow-ai/evebox) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/counterflow/evebox.svg)
 
 EveBox is a web based Suricata "eve" event viewer for Elastic Search.
 
