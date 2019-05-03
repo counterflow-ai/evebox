@@ -38,15 +38,10 @@ Example:
 Then visit http://localhost:5636 with your browser.
 
 The latest release builds can be found at
-https://evebox.org/files/release/latest/.
+[https://evebox.opnids.io/downloads.html](https://evebox.opnids.io/downloads.html).
 
 The latest development builds (from git master) can be found at
-https://evebox.org/files/development/
-
-A [RPM](https://github.com/jasonish/evebox/wiki/EveBox-RPM-Repository)
-and
-[Debian](https://github.com/jasonish/evebox/wiki/EveBox-Debian-Repository) package
-repository are also available.
+[https://evebox.opnids.io/downloads.html](https://evebox.opnids.io/downloads.html)
 
 ### SELKS
 
