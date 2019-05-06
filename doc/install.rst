@@ -10,8 +10,8 @@ EveBox can be installed in a few ways:
 There are also RPM and Debian package repositories for installing with
 ``yum/dnf`` or ``apt-get``.
 
-To download go to the *Download* section of the `EveBox web site
-<https://evebox.org>`_.
+To install go to the *Installation* section of the `EveBox README
+<https://github.com/counterflow-ai/evebox#installation>`_.
 
 Other installation instructions exist on the `GitHub wiki
 <https://github.com/jasonish/evebox/wiki>`_.
